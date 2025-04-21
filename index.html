@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas de Mãe</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -37,92 +37,91 @@
             </div>
         </nav>
     </header>
+    
     <!-- Conteúdo principal -->
     <div class="main-content container mt-5">
-    <h1 class="text-center">Receitas de Mãe</h1>
- <!-- Seção 1 - Itens em Destaque -->
- <section class="container mt-5 destaque-carrossel">
-    <h2 class="text-center mb-4 destaque-titulo">Itens em Destaque</h2>
-    <div id="carouselItensDestaque" class="carousel slide carrossel-com-borda" data-bs-ride="carousel">
-            <!-- Indicadores -->
-            <div class="carousel-indicators">
-             <button type="button" data-bs-target="#carouselItensDestaque" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-             <button type="button" data-bs-target="#carouselItensDestaque" data-bs-slide-to="1" aria-label="Slide 2"></button>
-             <button type="button" data-bs-target="#carouselItensDestaque" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+        <h1 class="text-center">Receitas de Mãe</h1>
+        
+        <!-- Seção 1 - Itens em Destaque -->
+        <section class="container mt-5 destaque-carrossel">
+            <h2 class="text-center mb-4 destaque-titulo">Itens em Destaque</h2>
+            <div id="carouselItensDestaque" class="carousel slide carrossel-com-borda" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselItensDestaque" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselItensDestaque" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselItensDestaque" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
 
-            <!-- Slides -->
-         <div class="carousel-inner">
-             <div class="carousel-item active">
-                    <img src="torta.jpeg" class="d-block w-100" alt="Maminha Assada">
-                 <div class="carousel-caption d-none d-md-block bg-custom rounded p-3">
-                     <h5 style="color: #0a0909;">Empadão de Frango</h5>
-                     <p style="color: #555;">Inconfundível em cada mordida. Esta receita, repleta de cremosidade e sabores marcantes, é uma opção perfeita para qualquer ocasião.</p>
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="detalhes.html?id=5">
+                            <img src="torta.jpeg" class="d-block w-100" alt="Empadão de Frango">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block bg-custom rounded p-3">
+                            <h5 style="color: #0a0909;">Empadão de Frango</h5>
+                            <p style="color: #555;">Inconfundível em cada mordida. Esta receita, repleta de cremosidade e sabores marcantes, é uma opção perfeita para qualquer ocasião.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="detalhes.html?id=6">
+                            <img src="palha.jpg" class="d-block w-100" alt="Palha Italiana">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block bg-custom rounded p-3">
+                            <h5 style="color: #080707;">Palha Italiana</h5>
+                            <p style="color: #555;">Um doce feito à base de brigadeiro e biscoito triturado, de sabor maravilhoso!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="detalhes.html?id=7">
+                            <img src="lasanha.jpg" class="d-block w-100" alt="Lasanha">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block bg-custom rounded p-3">
+                            <h5 style="color: #080707;">Lasanha</h5>
+                            <p style="color: #555;">Prático, rápido e muito saboroso. Com suas camadas de massa, recheio e molho, é uma verdadeira explosão de sabores.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                 <img src="palha.jpg" class="d-block w-100" alt="Bolo de Cenoura">
-                    <div class="carousel-caption d-none d-md-block bg-custom rounded p-3">
-                       <h5 style="color: #080707;">Palha Italiana</h5>
-                      <p style="color: #555;">Um doce feito à base de brigadeiro e biscoito triturado, de sabor maravilhoso!</p>
-                 </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="lasanha.jpg" class="d-block w-100" alt="Macarrão de Forno">
-                    <div class="carousel-caption d-none d-md-block bg-custom rounded p-3">
-                     <h5 style="color: #080707;">Lasanha</h5>
-                      <p style="color: #555;">Prático, rápido e muito saboroso. Com suas camadas de massa, recheio e molho, é uma verdadeira explosão de sabores.</p>
-                  </div>
-                </div>
+
+                <!-- Botões de navegação -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselItensDestaque" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon custom-control-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselItensDestaque" data-bs-slide="next">
+                    <span class="carousel-control-next-icon custom-control-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
-
-            <!-- Botões de navegação -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselItensDestaque" data-bs-slide="prev">
-             <span class="carousel-control-prev-icon custom-control-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselItensDestaque" data-bs-slide="next">
-                <span class="carousel-control-next-icon custom-control-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
-        </div>
-    </section>
-    <!-- Seção 2 - Receitas Cadastradas -->
-    <section class="container mt-5" id="receitas-section">
-    <h2 class="text-center mb-4 receitas-titulo">Receitas Cadastradas</h2>
-    <div class="row" id="receitas-container">
-        <!-- Cards serão inseridos aqui pelo JavaScript -->
-    </div>
-    </section>
-
-
-
-
-    <!-- Postagem de receita -->
-    <div class="row" id="receitas-container">
-        <!-- Os cards serão renderizados pelo JavaScript -->
-    </div>
+        </section>
+        
+        <!-- Seção 2 - Receitas Cadastradas -->
+        <section class="container mt-5" id="receitas-section">
+            <h2 class="text-center mb-4 receitas-titulo">Receitas Cadastradas</h2>
+            <div class="row" id="receitas-container">
+                <!-- Cards serão inseridos aqui pelo JavaScript -->
+            </div>
+        </section>
     </div>
 
-    <script src="app.js"></script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Seção 3 - Sobre o Criador -->
     <section class="container mt-5 mb-5 p-4 criador-section rounded shadow-sm">
         <h2 class="text-center mb-3" style="color: burlywood;">Sobre a Criadora</h2>
         <div class="row align-items-center">
             <div class="col-md-3 text-center mb-3 mb-md-0">
-             <img src="criadora.jpg" alt="Foto da criadora" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                <img src="criadora.jpg" alt="Foto da criadora" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
             </div>
             <div class="col-md-9">
-             <p style="font-size: 1.1rem; color: #555;">
-                Meu nome é Leticia, e este site foi desenvolvido como parte de um trabalho prático para a aula de "desenvolvimento de interfaces web".
-                A ideia do site foi inspirada por amar comidas caseiras feitas pelas pessoas da minha vida! 🍲❤️
-             </p>
+                <p style="font-size: 1.1rem; color: #555;">
+                    Meu nome é Leticia, e este site foi desenvolvido como parte de um trabalho prático para a aula de "desenvolvimento de interfaces web".
+                    A ideia do site foi inspirada por amar comidas caseiras feitas pelas pessoas da minha vida! 🍲❤️
+                </p>
             </div>
         </div>
     </section>
 
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
